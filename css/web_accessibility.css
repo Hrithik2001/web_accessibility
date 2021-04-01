@@ -71,7 +71,7 @@ label {
 }
 
 input {
-  max-width: 25rem;
+  max-width: 20rem;
   border: 2px solid var(--main);
   border-radius: 4px;
   line-height: 2rem;
@@ -167,7 +167,13 @@ input[type='checkbox'],
 input[type='submit'] {
   cursor: pointer;
 }
-
+figure figcaption a{
+  text-decoration: none;
+  color:blue;
+}
+figure figcaption a:hover{
+  text-decoration: underline;
+}
 /* *** Custom Component *** */
 #terms-content {
   display: none;
@@ -215,5 +221,22 @@ input[type='submit'] {
 }
 footer p{
   text-align: center;
-  
+
+}
+@media screen and (max-width: 500px) {
+  nav div.content ul{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  nav div.content ul li{
+    padding: 10px;
+  }
+  main.content{
+    display: block;
+    width: 100%;
+  }
+  aside p{
+    display: none;
+  }
 }
